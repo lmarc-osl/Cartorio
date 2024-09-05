@@ -144,7 +144,7 @@ int main() {
     printf("1. Registro\n");
     printf("2. Consultar nomes\n");
     printf("3. Deletar nomes\n");
-    
+    printf("4. Sair\n");
     printf("\nDigite a opção desejada: ");
 
     scanf("%d", &opcao);
@@ -161,13 +161,15 @@ int main() {
       case 3:
         deletar();
         break;
-      
+      case 4:
+        printf("\nSaindo do sistema...\n");
+        break;
       default:
         printf("Opção inválida!\n");
         system("pause");
         break;
     }
-  } while (opcao != 3);
+  } while (opcao != 4);
 
   return 0;
 }
